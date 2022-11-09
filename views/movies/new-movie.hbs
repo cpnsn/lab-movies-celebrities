@@ -1,0 +1,18 @@
+<h2>NEW MOVIES</h2>
+
+<form
+  action="/movies/create"
+  method="post"
+  enctype="application/x-www-form-urlencoded"
+>
+  <select name="movies" id="movies" multiple>
+
+    {{#each allCelebrities}}
+
+      <option value={{this.id}}>{{this.name}}</option>
+
+    {{/each}}
+
+  </select>
+
+</form>
